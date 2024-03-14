@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lobster&family=Luckiest+Guy&family=Orbitron:wght@400..900&family=Protest+Guerrilla&display=swap');
+
+:root{
+    --cor1: #318CE7;
+    --branco: #FFFFFF;
+    --cor2: #98c3ed;
+    --cor3:#afcdea;
+
+}
+
+body{
+    background-color: var(--cor1);
+    color: #FFFFFF;
+}
+
+h1{
+    color: var(--branco);
+    font-family: "Luckiest Guy", cursive;
+    font-size: 50px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+span{
+    color: #0a3818;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 50px;
+}
+
+.botao {
+    font-family: "Luckiest Guy", cursive;
+    background-color: var(--cor3);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 300px;
+    border-bottom: 4px solid var(--cor2); 
+    border-left: 2px solid var(--cor2); 
+    border-right: 2px solid var(--cor2); 
+    border-top: none;
+    opacity: 50%;
+
+}
+
+
+.botao:first-child{
+    border-radius: 40px 0 0 0;
+}
+
+.botao:last-child{
+    border-radius: 0 40px 0 0;
+}
+
+.botao.ativo{
+    opacity: 100%;
+    border-bottom: 4px solid var(--cor1);
+}
+.abas-conteudo.ativo{
+    display: block;
+}
+
+.abas-conteudo{
+display: none;
+}
+
+.abas-textos{
+    background-color: var(--cor2);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo-titulo1{
+    font-size: 28px;
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;;
+    letter-spacing: 3px;
+}
+
+.aba-conteudo-titulo2{
+    text-align: center;
+    color: var(--cor1);
+    text-transform: uppercase;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 3px;
+}
+
+.contador{
+    display: flex;
+    justify-content: center;
+    font-family: "Luckiest Guy", cursive;
+    flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--cor1);
+    font-family: "Luckiest Guy", cursive;
+    font-size: 22px;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
